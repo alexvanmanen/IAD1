@@ -3,7 +3,7 @@ package nl.alexvanmanen.iad1.algorithms;
 public class LZW {
 	private static int counter = 256;
 	public static void main(String[] args) {
-		encode("zeven scheve neven bleven even zweven");
+		encode("BLABLA BLABLA BLABLA BLABLA BLABLA");
 
 	}
 
