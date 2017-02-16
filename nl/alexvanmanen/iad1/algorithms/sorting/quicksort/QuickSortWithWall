@@ -7,9 +7,8 @@ public class QuickSortWithWall {
 	}
 
 	private static void sort(int[] array, int positionLeft, int positionRight) {
-		if (positionLeft >= positionRight) {
+		if (positionLeft >= positionRight)
 			return;
-		}
 
 		int pivotPosition = positionRight;
 		int pivotValue = array[positionRight];
