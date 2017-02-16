@@ -2,11 +2,11 @@ package IAD1.nl.alexvanmanen.iad1.algorithms.sorting.quicksort;
 
 public class QuickSortWithWall {
 
-	public static void sort(int[] array) {
+	public void sort(int[] array) {
 		sort(array, 0, array.length - 1);
 	}
 
-	private static void sort(int[] array, int positionLeft, int positionRight) {
+	private void sort(int[] array, int positionLeft, int positionRight) {
 		if (positionLeft >= positionRight)
 			return;
 
@@ -26,7 +26,7 @@ public class QuickSortWithWall {
 		sort(array, wall, positionRight);
 	}
 
-	public static void swap(int[] array, int positionA, int positionB) {
+	private void swap(int[] array, int positionA, int positionB) {
 		int temp = array[positionA];
 		array[positionA] = array[positionB];
 		array[positionB] = temp;
