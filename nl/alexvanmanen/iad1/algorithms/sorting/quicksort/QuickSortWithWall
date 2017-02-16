@@ -1,26 +1,16 @@
 package IAD1.nl.alexvanmanen.iad1.algorithms.sorting.quicksort;
 
-import java.util.Arrays;
-
 public class QuickSortWithWall {
 
-	public static void main(String[] args) {
-		int[] array = { 2, 5, 4, 6, 1, 3 };
-		// int[] array = {3, 2, 4, 1};
-		System.out.println(Arrays.toString(array));
-		quickSort(array);
-		System.out.println(Arrays.toString(array));
+	public static void sort(int[] array) {
+		sort(array, 0, array.length - 1);
 	}
 
-	public static void quickSort(int[] array) {
-		quickSort(array, 0, array.length - 1);
-	}
-
-	private static void quickSort(int[] array, int positionLeft, int positionRight) {
-		
+	private static void sort(int[] array, int positionLeft, int positionRight) {
 		if (positionLeft >= positionRight) {
 			return;
 		}
+
 		int pivotPosition = positionRight;
 		int pivotValue = array[positionRight];
 		int wall = positionLeft;
@@ -31,12 +21,10 @@ public class QuickSortWithWall {
 				wall++;
 			}
 		}
-		if (pivotValue < array[wall]) {
-			swap(array, pivotPosition, wall);
-		}
-		quickSort(array, positionLeft, wall - 1);
-		quickSort(array, wall, positionRight);
 
+		swap(array, pivotPosition, wall);
+		sort(array, positionLeft, wall - 1);
+		sort(array, wall, positionRight);
 	}
 
 	public static void swap(int[] array, int positionA, int positionB) {
