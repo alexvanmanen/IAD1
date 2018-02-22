@@ -9,7 +9,6 @@ public class Heapsort {
 	private int right;
 	private int largest;
 
-	// Build-Heap Function
 	public void buildheap(int[] a) {
 		n = a.length - 1;
 		for (int i = n / 2; i >= 0; i--) {
@@ -21,7 +20,6 @@ public class Heapsort {
 		maxheap(a, 0);
 	}
 
-	// Max-Heap Function
 	public void maxheap(int[] a, int i) {
 		left = 2 * i;
 		right = 2 * i + 1;
@@ -41,7 +39,6 @@ public class Heapsort {
 		}
 	}
 
-	// Exchange Function
 	public void exchange(int i, int j) {
 		int t = array[i];
 		array[i] = array[j];
@@ -64,7 +61,6 @@ public class Heapsort {
 		buildheap(array);
 
 		for (int i = n; i > 0; i--) {
-			//System.out.println(getMax());
 			exchange(0, i);
 			n = n - 1;
 			maxheap(array);
