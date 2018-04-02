@@ -1,4 +1,4 @@
-package IAD1.nl.alexvanmanen.iad1.algorithms.sorting.quicksort;
+package nl.alexvanmanen.iad1.algorithms.sorting.quicksort;
 
 public class QuickSortWithWall {
 

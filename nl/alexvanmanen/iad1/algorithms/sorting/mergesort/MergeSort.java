@@ -1,4 +1,4 @@
-package IAD1.nl.alexvanmanen.iad1.algorithms.sorting.mergesort;
+package nl.alexvanmanen.iad1.algorithms.sorting.mergesort;
 
 public class MergeSort {
 

@@ -1,4 +1,4 @@
-package nl.alexvanmanen.iad1.quicksort;
+package nl.alexvanmanen.iad1.algorithms.sorting.quicksort;
 
 /**
  * @author Alex van Manen

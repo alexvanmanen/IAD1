@@ -1,4 +1,4 @@
-package iad1.nl.alexvanmanen.iad1.algorithms;
+package nl.alexvanmanen.iad1.algorithms;
 
 import java.util.ArrayList;
 import java.util.Collections;
